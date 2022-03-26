@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 65.5%;
+    color: #fff;
+    background-color: #000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: url(/src/img/main-screen__bgc.jpg) no-repeat center / cover;
+    height: 100vh;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 8rem;
+    }
+
+    &__logo {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__nav a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__nav a+a {
+        margin-left: 7rem;
+    }
+
+    &__button {
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        margin-left: auto;
+    }
+}
+
+/* Display */
+
+
+.display {
+
+
+    &__header {
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 140%;
+        padding-top: 30rem;
+    }
+
+    &__header span {
+        display: block;
+    }
+
+    &__timer {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__timer-item {
+        width: 10.2rem;
+        height: 11.2rem;
+        background-color: #121212;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__timer-count {
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+
+    &__timer-text {
+        font-size: 1.6rem;
+        opacity: 0.4;
+    }
+
+    &__button {
+        margin-top: 7rem;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    }
+
+    &__bg {}
+}
+
+.timer {}
